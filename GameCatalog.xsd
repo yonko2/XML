@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Simple Types -->
+    <xs:simpleType name="genreType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Action"/>
+            <xs:enumeration value="Simulation"/>
+            <xs:enumeration value="Education"/>
+            <xs:enumeration value="Adventure"/>
+            <xs:enumeration value="Puzzle"/>
+            <xs:enumeration value="Role-Playing"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="platformType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PC"/>
+            <xs:enumeration value="Console"/>
+            <xs:enumeration value="Mobile"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Complex Types -->
+    <xs:complexType name="featuresType">
+        <xs:sequence>
+            <xs:element name="feature" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="gameType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="developer" type="xs:string"/>
+            <xs:element name="release_year" type="xs:integer"/>
+            <xs:element name="genre" type="genreType"/>
+            <xs:element name="platform" type="platformType"/>
+            <xs:element name="features" type="featuresType"/>
+            <xs:element name="image" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="applicationType">
+        <xs:attribute name="gameRef" type="xs:IDREF" use="required"/>
+        <xs:attribute name="url" type="xs:anyURI" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="gamesType">
+        <xs:sequence>
+            <xs:element name="game" type="gameType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="applicationsType">
+        <xs:sequence>
+            <xs:element name="application" type="applicationType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Root Element -->
+    <xs:element name="game_catalog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="games" type="gamesType"/>
+                <xs:element name="applications" type="applicationsType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

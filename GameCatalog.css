@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+.game-info h2 {
+    font-size: 20px;
+    color: #222;
+}
+
+.game-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.section h3 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.section p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
