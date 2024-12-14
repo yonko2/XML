@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="GameCatalog.xsl"?>
-<vg:video_game_catalogue xmlns:vg="http://www.example.com/videogames/types">
-    <vg:genres>
-        <vg:genre id="1" name="Education">
-            <vg:subgenre id="1-1" name="STEM Games">
-                <vg:game id="g1">
-                    <vg:name>Math Adventure</vg:name>
-                    <vg:photo>./images/math_adventure.jpg</vg:photo>
-                    <vg:type>Single-player</vg:type>
-                    <vg:genreRef ref="1" />
-                    <vg:subgenreRef ref="1-1" />
-                    <vg:application>Mobile</vg:application>
-                    <vg:details>
-                        <vg:releaseYear>2022</vg:releaseYear>
-                        <vg:developer>EduFun Games</vg:developer>
-                        <vg:rating>4.5</vg:rating>
-                        <vg:price currency="USD">9.99</vg:price>
-                    </vg:details>
-                </vg:game>
-                <vg:game id="g2">
-                    <vg:name>Science Quest</vg:name>
-                    <vg:photo>./images/science_quest.jpg</vg:photo>
-                    <vg:type>Multiplayer</vg:type>
-                    <vg:genreRef ref="1" />
-                    <vg:subgenreRef ref="1-1" />
-                    <vg:application>PC</vg:application>
-                    <vg:details>
-                        <vg:releaseYear>2023</vg:releaseYear>
-                        <vg:developer>SmartLab Studios</vg:developer>
-                        <vg:rating>4.8</vg:rating>
-                        <vg:price currency="EUR">14.99</vg:price>
-                    </vg:details>
-                </vg:game>
-            </vg:subgenre>
-        </vg:genre>
-        <vg:genre id="2" name="Health">
-            <vg:subgenre id="2-1" name="Mental Health Games">
-                <vg:game id="g3">
-                    <vg:name>Mindfulness Journey</vg:name>
-                    <vg:photo>./images/mindfulness_journey.jpg</vg:photo>
-                    <vg:type>Single-player</vg:type>
-                    <vg:genreRef ref="2" />
-                    <vg:subgenreRef ref="2-1" />
-                    <vg:application>Console</vg:application>
-                    <vg:details>
-                        <vg:releaseYear>2021</vg:releaseYear>
-                        <vg:developer>Zen Studios</vg:developer>
-                        <vg:rating>4.2</vg:rating>
-                        <vg:price currency="GBP">12.50</vg:price>
-                    </vg:details>
-                </vg:game>
-            </vg:subgenre>
-        </vg:genre>
-    </vg:genres>
-</vg:video_game_catalogue>
+<video_game_catalogue>
+    <genres>
+        <genre id="1" name="Education">
+            <subgenre id="1-1" name="STEM Games">
+                <game id="g1">
+                    <name>Math Adventure</name>
+                    <photo>./images/math_adventure.jpg</photo>
+                    <type>Single-player</type>
+                    <genreRef ref="1" />
+                    <subgenreRef ref="1-1" />
+                    <application>Mobile</application>
+                    <details>
+                        <releaseYear>2022</releaseYear>
+                        <developer>EduFun Games</developer>
+                        <rating>4.5</rating>
+                        <price currency="USD">9.99</price>
+                    </details>
+                </game>
+                <game id="g2">
+                    <name>Science Quest</name>
+                    <photo>./images/science_quest.jpg</photo>
+                    <type>Multiplayer</type>
+                    <genreRef ref="1" />
+                    <subgenreRef ref="1-1" />
+                    <application>PC</application>
+                    <details>
+                        <releaseYear>2023</releaseYear>
+                        <developer>SmartLab Studios</developer>
+                        <rating>4.8</rating>
+                        <price currency="EUR">14.99</price>
+                    </details>
+                </game>
+            </subgenre>
+        </genre>
+        <genre id="2" name="Health">
+            <subgenre id="2-1" name="Mental Health Games">
+                <game id="g3">
+                    <name>Mindfulness Journey</name>
+                    <photo>./images/mindfulness_journey.jpg</photo>
+                    <type>Single-player</type>
+                    <genreRef ref="2" />
+                    <subgenreRef ref="2-1" />
+                    <application>Console</application>
+                    <details>
+                        <releaseYear>2021</releaseYear>
+                        <developer>Zen Studios</developer>
+                        <rating>4.2</rating>
+                        <price currency="GBP">12.50</price>
+                    </details>
+                </game>
+            </subgenre>
+        </genre>
+    </genres>
+</video_game_catalogue>
