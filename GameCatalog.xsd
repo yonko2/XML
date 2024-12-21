@@ -1,71 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalogue">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="games" />
+                <xs:element name="purpose" />
+                <xs:element name="sector" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
 
-    <!-- Simple Types -->
-    <xs:simpleType name="genreType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Action"/>
-            <xs:enumeration value="Simulation"/>
-            <xs:enumeration value="Education"/>
-            <xs:enumeration value="Adventure"/>
-            <xs:enumeration value="Puzzle"/>
-            <xs:enumeration value="Role-Playing"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="platformType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="PC"/>
-            <xs:enumeration value="Console"/>
-            <xs:enumeration value="Mobile"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <!-- Complex Types -->
-    <xs:complexType name="featuresType">
-        <xs:sequence>
-            <xs:element name="feature" type="xs:string" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="gameType">
-        <xs:sequence>
-            <xs:element name="title" type="xs:string"/>
-            <xs:element name="developer" type="xs:string"/>
-            <xs:element name="release_year" type="xs:integer"/>
-            <xs:element name="genre" type="genreType"/>
-            <xs:element name="platform" type="platformType"/>
-            <xs:element name="features" type="featuresType"/>
-            <xs:element name="image" type="xs:string"/>
-        </xs:sequence>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
-    </xs:complexType>
-
-    <xs:complexType name="applicationType">
-        <xs:attribute name="gameRef" type="xs:IDREF" use="required"/>
-        <xs:attribute name="url" type="xs:anyURI" use="required"/>
-    </xs:complexType>
-
-    <xs:complexType name="gamesType">
-        <xs:sequence>
-            <xs:element name="game" type="gameType" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="applicationsType">
-        <xs:sequence>
-            <xs:element name="application" type="applicationType" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <!-- Root Element -->
-    <xs:element name="game_catalog">
+    <xs:element name="games">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="games" type="gamesType"/>
-                <xs:element name="applications" type="applicationsType"/>
+                <xs:element name="game" type="gameType" minOccurs="1" maxOccurs="unbounded">
+                    <xs:key name="gameKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:keyref name="purposeKeyRef" refer="purposeKey">
+                        <xs:selector xpath="catalogue/games/game" />
+                        <xs:field xpath="@purpose" />
+                    </xs:keyref>
+                    <xs:keyref name="sectorKeyRef" refer="sectorKey">
+                        <xs:selector xpath="catalogue/games/game" />
+                        <xs:field xpath="@sector" />
+                    </xs:keyref>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
+    <xs:complexType name="gameType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="description" type="shortString" minOccurs="0" />
+            <xs:element name="releaseYear" type="xs:integer" />
+            <xs:element name="studio" type="xs:string" />
+            <xs:element name="stars" type="integer_0-5" />
+            <xs:element name="thumbnail" type="imageType" />
+            <xs:element name="primaryCategory" type="xs:string" />
+            <xs:element name="secondaryCategory" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="purpose" type="xs:IDREF" use="required" />
+        <xs:attribute name="sector" type="xs:IDREF" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="imageType">
+        <xs:attribute name="source" type="xs:ENTITY" use="required" />
+    </xs:complexType>
+
+    <xs:element name="purposes">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="purpose" type="purposeType" minOccurs="0">
+                    <xs:key name="purposeKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="purposeType">
+        <xs:simpleContent>
+            <xs:extension base="purposeEnum">
+                <xs:attribute name="id" type="xs:ID" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="purposeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Games for Health" />
+            <xs:enumeration value="Advergames" />
+            <xs:enumeration value="Games for Training" />
+            <xs:enumeration value="Games for Education" />
+            <xs:enumeration value="Games for Science and Research" />
+            <xs:enumeration value="Production" />
+            <xs:enumeration value="Games as Work" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="sectors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sector" type="sectorType" minOccurs="1" maxOccurs="unbounded">
+                    <xs:key name="sectorKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="sectorType">
+        <xs:simpleContent>
+            <xs:extension base="sectorEnum">
+                <xs:attribute name="id" type="xs:ID" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="sectorEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Government and NGO" />
+            <xs:enumeration value="Defense" />
+            <xs:enumeration value="Healthcare" />
+            <xs:enumeration value="Marketing and Communications" />
+            <xs:enumeration value="Education" />
+            <xs:enumeration value="Corporate" />
+            <xs:enumeration value="Industry" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="shortString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="1024" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="integer_0-5">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="5" />
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
