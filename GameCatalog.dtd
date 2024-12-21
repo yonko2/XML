@@ -1,0 +1,25 @@
+<!ELEMENT catalogue (games, purpose, sector)>
+
+<!ELEMENT games (game+)>
+<!ELEMENT game (title, description, releaseYear, studio, stars, thumbnail, primaryCategory, secondaryCategory)>
+<!ATTLIST game id ID #REQUIRED>
+<!ATTLIST game purpose IDREF #REQUIRED>
+<!ATTLIST game sector IDREF #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT releaseYear (#PCDATA)>
+<!ELEMENT studio (#PCDATA)>
+<!ELEMENT stars (#PCDATA)>
+<!ELEMENT thumbnail EMPTY>
+<!ATTLIST thumbnail source ENTITY #REQUIRED>
+<!ELEMENT primaryCategory (#PCDATA)>
+<!ELEMENT secondaryCategory (#PCDATA)>
+
+<!ELEMENT purposes (purpose*)>
+<!ELEMENT purpose (#PCDATA)>
+<!ATTLIST purpose id ID #REQUIRED>
+
+<!ELEMENT sectors (sector*)>
+<!ELEMENT sector (#PCDATA)>
+<!ATTLIST sector id ID #REQUIRED>
