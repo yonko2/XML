@@ -5,14 +5,14 @@
         xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation CDATA #FIXED "GameCatalog.xsd">
 
-    <!NOTATION jpeg SYSTEM "image/jpeg">
-    <!ENTITY game0_image PUBLIC "game0_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6250/header.jpg?t=1573746017" NDATA jpeg>
-    <!ENTITY game1_image PUBLIC "game1_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3900/header.jpg?t=1724341287" NDATA jpeg>
-    <!ENTITY game2_image PUBLIC "game2_image_id" "https://www.licenseglobal.com/video-games/konami-taps-sharpe-dance-dance-revolution-milestone" NDATA jpeg>
-    <!ENTITY game3_image PUBLIC "game3_image_id" "https://variety.com/wp-content/uploads/2016/04/machinima-logo.jpg?w=720&h=405&crop=1" NDATA jpeg>
-    <!ENTITY game4_image PUBLIC "game4_image_id" "https://learningcontent.cisco.com/images/binarygame_2.png" NDATA jpeg>
-    <!ENTITY game5_image PUBLIC "game5_image_id" "https://persuasivegames.com/images/games/takebackillinois/game0.jpg" NDATA jpeg>
-    <!ENTITY game6_image PUBLIC "game6_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233720/header.jpg?t=1726238747" NDATA jpeg>
+    <!-- <!NOTATION jpeg SYSTEM "image/jpeg"> -->
+    <!ENTITY game0_image "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6250/header.jpg?t=1573746017">
+    <!ENTITY game1_image "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3900/header.jpg?t=1724341287">
+    <!ENTITY game2_image "https://eu-images.contentstack.com/v3/assets/blt8770191dea35bccc/blte8b0e0f404c37fba/64d387fb44f1d11be1bb19a6/Dance_20Dance_20Revolution.png">
+    <!ENTITY game3_image "https://variety.com/wp-content/uploads/2016/04/machinima-logo.jpg">
+    <!ENTITY game4_image "https://learningcontent.cisco.com/images/binarygame_2.png">
+    <!ENTITY game5_image "https://persuasivegames.com/images/games/takebackillinois/game0.jpg">
+    <!ENTITY game6_image "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233720/header.jpg?t=1726238747">
 ]>
 
 <catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,7 +27,7 @@
             <releaseYear>2007</releaseYear>
             <studio>Muzzy Lane</studio>
             <stars>3.5</stars>
-            <thumbnail source="game0_image" />
+            <thumbnail source="&game0_image;" />
             <primaryCategory>High School</primaryCategory>
             <secondaryCategory>Formal</secondaryCategory>
         </game>
@@ -42,7 +42,7 @@
             <releaseYear>2005</releaseYear>
             <studio>Firaxis Games</studio>
             <stars>4.75</stars>
-            <thumbnail source="game1_image" />
+            <thumbnail source="&game1_image;" />
             <primaryCategory>High School</primaryCategory>
             <secondaryCategory>Informal</secondaryCategory>
         </game>
@@ -59,7 +59,7 @@
             <releaseYear>1998</releaseYear>
             <studio>Konami</studio>
             <stars>4</stars>
-            <thumbnail source="game2_image" />
+            <thumbnail source="&game2_image;" />
             <primaryCategory>High School</primaryCategory>
             <secondaryCategory>Formal</secondaryCategory>
         </game>
@@ -73,7 +73,7 @@
             <releaseYear>2000</releaseYear>
             <studio>Machinima, Inc.</studio>
             <stars>4.2</stars>
-            <thumbnail source="game3_image" />
+            <thumbnail source="&game3_image;" />
             <primaryCategory>Media Mashups</primaryCategory>
             <secondaryCategory>Video</secondaryCategory>
         </game>
@@ -88,7 +88,7 @@
             <releaseYear>2003</releaseYear>
             <studio>Cisco</studio>
             <stars>4</stars>
-            <thumbnail source="game4_image" />
+            <thumbnail source="&game4_image;" />
             <primaryCategory>Professional and Technical Skills</primaryCategory>
             <secondaryCategory>Informal</secondaryCategory>
         </game>
@@ -101,7 +101,7 @@
             <releaseYear>2004</releaseYear>
             <studio>Persuasive Games</studio>
             <stars>3</stars>
-            <thumbnail source="game5_image" />
+            <thumbnail source="&game5_image;" />
             <primaryCategory>Using Games</primaryCategory>
             <secondaryCategory>Political</secondaryCategory>
         </game>
@@ -116,7 +116,7 @@
             <releaseYear>2013</releaseYear>
             <studio>Bossa Studios</studio>
             <stars>4.5</stars>
-            <thumbnail source="game6_image" />
+            <thumbnail source="&game6_image;" />
             <primaryCategory>Personal</primaryCategory>
             <secondaryCategory>Educational</secondaryCategory>
         </game>

@@ -48,7 +48,7 @@
     </xs:complexType>
 
     <xs:complexType name="imageType">
-        <xs:attribute name="source" type="xs:ENTITY" use="required" />
+        <xs:attribute name="source" type="xs:string" use="required" />
     </xs:complexType>
 
     <xs:element name="purposes">
