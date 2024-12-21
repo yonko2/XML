@@ -4,8 +4,8 @@
         <xs:complexType>
             <xs:all>
                 <xs:element name="games" />
-                <xs:element name="purpose" />
-                <xs:element name="sector" />
+                <xs:element name="purposes" />
+                <xs:element name="sectors" />
             </xs:all>
         </xs:complexType>
     </xs:element>
@@ -87,7 +87,7 @@
     <xs:element name="sectors">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="sector" type="sectorType" minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="sector" type="sectorType" minOccurs="0">
                     <xs:key name="sectorKey">
                         <xs:selector xpath="." />
                         <xs:field xpath="@id" />

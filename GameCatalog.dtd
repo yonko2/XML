@@ -1,4 +1,4 @@
-<!ELEMENT catalogue (games, purpose, sector)>
+<!ELEMENT catalogue (games, purposes, sectors)>
 
 <!ELEMENT games (game+)>
 <!ELEMENT game (title, description, releaseYear, studio, stars, thumbnail, primaryCategory, secondaryCategory)>

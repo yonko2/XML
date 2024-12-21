@@ -6,641 +6,148 @@
         xsi:noNamespaceSchemaLocation CDATA #FIXED "GameCatalog.xsd">
 
     <!NOTATION jpeg SYSTEM "image/jpeg">
-    <!ENTITY game7_image8 PUBLIC "game7_image8_identifier" "https://cf.bstatic.com/xdata/images/game/max1024/194341821.jpg?k=746c4082e907012439d7e6f88eeb0b0012b32f6466e7f2d88a8056cdaabdeeae" NDATA jpeg>
+    <!ENTITY game0_image PUBLIC "game0_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6250/header.jpg?t=1573746017" NDATA jpeg>
+    <!ENTITY game1_image PUBLIC "game1_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3900/header.jpg?t=1724341287" NDATA jpeg>
+    <!ENTITY game2_image PUBLIC "game2_image_id" "https://www.licenseglobal.com/video-games/konami-taps-sharpe-dance-dance-revolution-milestone" NDATA jpeg>
+    <!ENTITY game3_image PUBLIC "game3_image_id" "https://variety.com/wp-content/uploads/2016/04/machinima-logo.jpg?w=720&h=405&crop=1" NDATA jpeg>
+    <!ENTITY game4_image PUBLIC "game4_image_id" "https://learningcontent.cisco.com/images/binarygame_2.png" NDATA jpeg>
+    <!ENTITY game5_image PUBLIC "game5_image_id" "https://persuasivegames.com/images/games/takebackillinois/game0.jpg" NDATA jpeg>
+    <!ENTITY game6_image PUBLIC "game6_image_id" "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233720/header.jpg?t=1726238747" NDATA jpeg>
 ]>
 
 <catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="games.xsd">
+    xsi:noNamespaceSchemaLocation="GameCatalog.xsd">
     <games>
-        <game id="game0" purpose="purpose2">
-            <name>game Rila</name>
-            <category>game</category>
-            <address>Svoboda Square N 1, 2600 Dupnitsa, Bulgaria</address>
-            <description>game Rila is located in the center of Dupnitsa, just 0.6 mi from the
-                Highway 1 leading to Greece and offers you air-conditioned rooms with free Wi-Fi, 2
-                restaurants, a cash machine on site and private parking at reasonable rates. All
-                rooms at the Rila game come with a private bathroom, cable TV and a mini-bar. The 2
-                restaurants offer characteristic Bulgarian specialties and international cuisine.
-                The central bus station is 0.6 mi and the Dupnitsa Train Station is 1.2 mi away. The
-                distance to the Rila Monastery is 30 mi and to the Seven Rila Lakes it is 24 mi.
-                Transfers from Sofia Airport can be provided on request.</description>
-            <stars>3</stars>
-            <rating>8.5</rating>
-            <thumbnail source="game0_image0" />
-            <gallery>
-                <image source="game0_image1" />
-                <image source="game0_image2" />
-                <image source="game0_image3" />
-                <image source="game0_image4" />
-                <image source="game0_image5" />
-                <image source="game0_image6" />
-                <image source="game0_image7" />
-                <image source="game0_image8" />
-                <image source="game0_image9" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="true" spa="true" fitness="false"
-                restaurant="true" pets="true" breakfast="true" dinner="false" room-service="false"
-                refrigerator="false" bath="false" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Single Room</type>
-                    <beds>1 twin bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Triple Room</type>
-                    <beds>3 twin beds</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Room</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Room with Balcony</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double Room with Balcony</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="false" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
+        <game id="game0" purpose="purpose_games_for_education" sector="sector_education">
+            <title>Making History: The Calm and The Storm</title>
+            <description>Making History: The Calm and The Storm is a World War II grand strategy
+        video game released in March 2007 by developer Muzzy Lane. Similar in ways to the popular
+        board games Axis and Allies and Risk, Making History is turn-based with basic industrial,
+        economic, resource, research and diplomatic management included.</description>
+            <releaseYear>2007</releaseYear>
+            <studio>Muzzy Lane</studio>
+            <stars>3.5</stars>
+            <thumbnail source="game0_image" />
+            <primaryCategory>High School</primaryCategory>
+            <secondaryCategory>Formal</secondaryCategory>
         </game>
-        <game id="game1" purpose="purpose5" chain="chain0">
-            <name>Metropolitan game Sofia</name>
-            <category>game</category>
-            <address>64 Tsarigradsko shosse Blvd., 1784 Sofia, Bulgaria</address>
-            <description>Metropolitan game Sofia provides free WiFi, free airport shuttle, upon
-                request and availability and free private parking on site. The relax center comes
-                with a gym, a sauna and a steam bath. The International Expo Center and Sofia
-                Airport are both set 3.1 mi away and the Mall shopping center can be reached in a
-                5-minute walk. The stylish air-conditioned rooms offer a free safety deposit box. A
-                flat-screen TV with cable and satellite channels and a work desk are featured as
-                well. The bathroom is equipped with a shower or a bath, free toiletries and a
-                hairdryer. City views can be enjoyed from all rooms. At guests&#x27; disposal, there
-                is a relax center, offering a hot tub, massages and different beauty and wellness
-                procedures. For lunch and dinner the Metropolitan Restaurant serves exquisite
-                international dishes, complemented by a wide wine selection while the Met Bar offers
-                refreshing drinks and cocktails. Further services, offered at the Metropolitan
-                include car hire, shuttle transfers and room service. </description>
+        <game id="game1"
+            purpose="purpose_games_for_education" sector="sector_education">
+            <title>Civilization IV</title>
+            <description>Civilization IV (also known as Sid Meier's Civilization IV) is a 4X
+        turn-based strategy computer game and the fourth installment of the Civilization series, and
+        developed by Firaxis Games. It was designed by Soren Johnson. It was released in North
+        America, Europe, and Australia, between October 25 and November 4, 2005, and followed by
+        Civilization V.</description>
+            <releaseYear>2005</releaseYear>
+            <studio>Firaxis Games</studio>
+            <stars>4.75</stars>
+            <thumbnail source="game1_image" />
+            <primaryCategory>High School</primaryCategory>
+            <secondaryCategory>Informal</secondaryCategory>
+        </game>
+        <game id="game2"
+            purpose="purpose_games_as_work" sector="sector_healthcare">
+            <title>Dance Dance Revolution</title>
+            <description>Dance Dance Revolution is a music video game series produced by Konami.
+        Introduced in Japan in 1998 as part of the Bemani series, and released in North America and
+        Europe in 1999, Dance Dance Revolution is the pioneering series of the rhythm and dance
+        genre in video games. Players stand on a "dance platform" or stage and hit colored arrows
+        laid out in a cross with their feet to musical and visual cues. Players are judged by how
+        well they time their dance to the patterns presented to them and are allowed to choose more
+        music to play to if they receive a passing score.</description>
+            <releaseYear>1998</releaseYear>
+            <studio>Konami</studio>
             <stars>4</stars>
-            <rating>9.0</rating>
-            <thumbnail source="game1_image0" />
-            <gallery>
-                <image source="game1_image1" />
-                <image source="game1_image2" />
-                <image source="game1_image3" />
-                <image source="game1_image4" />
-                <image source="game1_image5" />
-                <image source="game1_image6" />
-                <image source="game1_image7" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="true"
-                restaurant="true" pets="true" breakfast="true" dinner="true" room-service="false"
-                refrigerator="false" bath="true" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Standard Room</type>
-                    <beds>1 king bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Premium Room</type>
-                    <beds>1 full bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Family Room</type>
-                    <beds>1 king bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Panoramic Suite with Jacuzzi</type>
-                    <beds>2 king beds</beds>
-                    <capacity>5</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
+            <thumbnail source="game2_image" />
+            <primaryCategory>High School</primaryCategory>
+            <secondaryCategory>Formal</secondaryCategory>
         </game>
-        <game id="game2" purpose="purpose3" chain="chain0">
-            <name>game Imperial Plovdiv</name>
-            <category>game</category>
-            <address>1A Arch. Kamen Petkov, 4017 Plovdiv, Bulgaria</address>
-            <description>Perfectly located in a central and quiet area, game Imperial Plovdiv, a
-                member of Radisson Individuals is an ideal choice for both business and leisure
-                travelers. The game is within walking distance of Plovdiv&#x27;s cultural heart, The
-                Old Town, and only minutes away from the city&#x27;s business and shopping
-                districts. Our friendly staff and professional service create a sense of comfort and
-                well-being. Designed to help you unwind, all rooms at game Imperial Plovdiv, a
-                member of Radisson Individuals are comfortable, inviting, and full of style. They
-                feature a flat-screen TV with cable channels, a mini-bar, a safety deposit box, a
-                private bathroom with hairdryer, individual air-conditioning and free high speed
-                wireless internet. Our restaurants and beautiful garden guarantee an unique culinary
-                escape with an original and welcoming atmosphere. game Imperial Plovdiv, a member of
-                Radisson Individuals features 6 conference rooms with more than 850 square yards of
-                meeting space.</description>
+        <game id="game3"
+            purpose="purpose_production" sector="sector_marketing_and_communications">
+            <title>Machinima</title>
+            <description>Machinima is the use of real-time computer graphics engines to create a
+        cinematic production. The word "Machinima" is a portmanteau of the words Machine and cinema.
+        According to Guinness World Records, machinima is the art of making animated narrative films
+        from computer graphics, most commonly using the same engines used by video games.</description>
+            <releaseYear>2000</releaseYear>
+            <studio>Machinima, Inc.</studio>
+            <stars>4.2</stars>
+            <thumbnail source="game3_image" />
+            <primaryCategory>Media Mashups</primaryCategory>
+            <secondaryCategory>Video</secondaryCategory>
+        </game>
+        <game id="game4"
+            purpose="purpose_games_for_training" sector="sector_education">
+            <title>Cisco Binary Game</title>
+            <description>In order to pass your CCNA exam, you need to be proficient at converting
+        decimal numbers to binary numbers and binary numbers to decimal numbers-and do so quickly.
+        The Cisco Learning Network is here to help with The Binary Game. Increase your understanding
+        of binary numbers and conversion speed by playing this fast-paced game. Before long you'll
+        be doing these conversions in your head.</description>
+            <releaseYear>2003</releaseYear>
+            <studio>Cisco</studio>
             <stars>4</stars>
-            <rating>9.2</rating>
-            <thumbnail source="game2_image0" />
-            <gallery>
-                <image source="game2_image1" />
-                <image source="game2_image2" />
-                <image source="game2_image3" />
-                <image source="game2_image4" />
-                <image source="game2_image5" />
-                <image source="game2_image6" />
-                <image source="game2_image7" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="true" fitness="true"
-                restaurant="false" pets="true" breakfast="true" dinner="false" room-service="false"
-                refrigerator="false" bath="true" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Family Room</type>
-                    <beds>1 king bed</beds>
-                    <capacity>5</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Premium Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>6</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Premium Room with City View</type>
-                    <beds>1 king bed</beds>
-                    <capacity>6</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Standard Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Standard Room with Garden View</type>
-                    <beds>1 king bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
+            <thumbnail source="game4_image" />
+            <primaryCategory>Professional and Technical Skills</primaryCategory>
+            <secondaryCategory>Informal</secondaryCategory>
         </game>
-        <game id="game3" purpose="purpose5">
-            <name>Blue Label Apart House</name>
-            <category>game</category>
-            <address>9a Akademik Zhak Natan Str. , Studentski Grad, 1700 Sofia, Bulgaria</address>
-            <description>Providing city views, Blue Label Apart House in Sofia features
-                accommodations, a terrace, and a shared lounge. This condo game provides free
-                private parking, an elevator, and free Wifi. Sofia Ring Mall is 2.9 miles from the
-                condo game, and Vasil Levski Stadium Station is 3 miles away. Accessible via private
-                entrance, all rooms have air conditioning, soundproofing, desk, and a private
-                bathroom with a shower. All units come with a wardrobe and a flat-screen TV, and
-                certain units at the condo game have a balcony. At the condo game, each unit has bed
-                linen and towels. Sopharma Business Towers is 1.4 miles from the condo game, while
-                Arena Armeets is 2.3 miles away. The nearest airport is Sofia Airport, 6.2 miles
-                from Blue Label Apart House.</description>
-            <stars>0</stars>
-            <rating>8.9</rating>
-            <thumbnail source="game3_image0" />
-            <gallery>
-                <image source="game3_image1" />
-                <image source="game3_image2" />
-                <image source="game3_image3" />
-                <image source="game3_image4" />
-                <image source="game3_image5" />
-                <image source="game3_image6" />
-                <image source="game3_image7" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="false"
-                restaurant="false" pets="false" breakfast="false" dinner="false"
-                room-service="false" refrigerator="false" bath="true" coffee-maker="false"
-                massage="false" conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Qudruple Room with Terrace</type>
-                    <beds>2 king beds</beds>
-                    <capacity>6</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Twin Room with Terrace</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double Room with Terrace</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Penthouse Apartment with 360 View Terrace</type>
-                    <beds>4 twin beds</beds>
-                    <capacity>8</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Comfort Quadruple Room with Terrace</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>7</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Standard Studio</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Family Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>4</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Family Room with Mountain View</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>4</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Apartment</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>4</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
-        </game>
-        <game id="game4" purpose="purpose4">
-            <name>Lombardi Family game</name>
-            <category>game</category>
-            <address>5 Atanas Uzunov Street, 7000 Ruse, Bulgaria</address>
-            <description>Offering a terrace, Lombardi Family game is located in Ruse, 656 feet from
-                Renaissance Park. Leventa Ruse is 2.1 mi away. Free WiFi is offered throughout the
-                property. All units are air conditioned and have a flat-screen TV. Some units
-                include a seating area and/or terrace. There is also a kitchen in some of the units,
-                equipped with an oven, a fridge, and a stovetop. There is a private bathroom with
-                free toiletries in every unit. Bed linen is provided. Guests can enjoy the on-site
-                bar and restaurant. Breakfast is either continental or buffet, depending on the
-                number of people. Ruse Port is 3.1 mi from Lombardi Family game.</description>
-            <stars>0</stars>
-            <rating>8.4</rating>
-            <thumbnail source="game4_image0" />
-            <gallery>
-                <image source="game4_image1" />
-                <image source="game4_image2" />
-                <image source="game4_image3" />
-                <image source="game4_image4" />
-                <image source="game4_image5" />
-                <image source="game4_image6" />
-                <image source="game4_image7" />
-                <image source="game4_image8" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="false"
-                restaurant="true" pets="false" breakfast="true" dinner="false" room-service="true"
-                refrigerator="false" bath="false" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>One-Bedroom Apartment &quot;Paris&quot;</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double Room - New York 2</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>1</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Room with Balcony - Love</type>
-                    <beds>1 full bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Large Double Room - Relax</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Room with Balcony - Exotic</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Room with Balcony - Indonesia</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Studio - Turquoise</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Deluxe Double Studio - Kashmir</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="false" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
-        </game>
-        <game id="game5" purpose="purpose6">
-            <name>Family game Gran Ivan</name>
-            <category>game</category>
-            <address>Ovcho Pole 28, 9000 Varna City, Bulgaria</address>
-            <description>The family-run Family game Gran Ivan is quietly located in the center of
-                Varna, only 5 minutes&#x27; walk from the Cathedral and 328 feet from the central
-                bus station. It offers free WiFi and PAID private parking. All rooms and studios are
-                air-conditioned and come equipped with a cable TV and a mini-bar. A small shopping
-                center can be found 328 feet away, and a pedestrian area is 8 minutes&#x27; walk
-                from the game. The Varna Shopping Mall and the Grand Mall are 1312 feet away. Varna
-                Airport is 3.7 mi away from the Gran Ivan game.</description>
+        <game id="game5"
+            purpose="purpose_advergames" sector="sector_government_and_ngo">
+            <title>Take back Illinois</title>
+            <description>Sponsored by the Illinois GOP, Take Back Illinois challenged players to
+        explore four issues surrounding the 2004 state elections: Medical Malpractice Reform,
+        Education Reform, Grassroots Activism, and Economic Reform.</description>
+            <releaseYear>2004</releaseYear>
+            <studio>Persuasive Games</studio>
             <stars>3</stars>
-            <rating>7.2</rating>
-            <thumbnail source="game5_image0" />
-            <gallery>
-                <image source="game5_image1" />
-                <image source="game5_image2" />
-                <image source="game5_image3" />
-                <image source="game5_image4" />
-                <image source="game5_image5" />
-                <image source="game5_image6" />
-                <image source="game5_image7" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="false"
-                restaurant="true" pets="false" breakfast="true" dinner="false" room-service="true"
-                refrigerator="false" bath="false" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Single Room</type>
-                    <beds>1 twin bed</beds>
-                    <capacity>1</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double or Twin Room</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Studio</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>5</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Superior Studio</type>
-                    <beds>1 king bed</beds>
-                    <capacity>6</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="true" />
-                </room>
-                <room>
-                    <type>Double Room with Balcony</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Budget Double or Twin Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="false" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Studio with Balcony - Free Parking and Work Friendly Facilities</type>
-                    <beds>1 queen bed</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Budget Twin Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>1</capacity>
-                    <facilities tv="false" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Queen Suite with Spa Bath</type>
-                    <beds>1 sofa bed</beds>
-                    <capacity>1</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="true"
-                        kitchen="false" />
-                </room>
-            </rooms>
+            <thumbnail source="game5_image" />
+            <primaryCategory>Using Games</primaryCategory>
+            <secondaryCategory>Political</secondaryCategory>
         </game>
-        <game id="game6" purpose="purpose1">
-            <name>game Sianie</name>
-            <category>game</category>
-            <address>ul. „Aleksand&#x27;r Stambolijski“ ploschad &quot;Tolbuhin&quot;1, 7600
-                Tutrakan, Bulgaria</address>
-            <description>game Sianie is located in Tutrakan and features a restaurant. With a
-                garden, the 1-star game has air-conditioned rooms with free WiFi, each with a
-                private bathroom. The game has family rooms. At the game, each room comes with a
-                closet. All rooms have a desk and a flat-screen TV, and certain accommodations at
-                game Sianie have a patio. At the accommodation rooms have bed linen and towels. The
-                nearest airport is Băneasa Airport, 83 miles from game Sianie.</description>
-            <stars>1</stars>
-            <rating>5.8</rating>
-            <thumbnail source="game6_image0" />
-            <gallery>
-                <image source="game6_image1" />
-                <image source="game6_image2" />
-                <image source="game6_image3" />
-                <image source="game6_image4" />
-                <image source="game6_image5" />
-                <image source="game6_image6" />
-                <image source="game6_image7" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="false"
-                restaurant="false" pets="false" breakfast="false" dinner="false"
-                room-service="false" refrigerator="false" bath="false" coffee-maker="false"
-                massage="false" conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Double Room with Private Bathroom</type>
-                    <beds>1 full bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Family Room with Bathroom</type>
-                    <beds>3 twin beds</beds>
-                    <capacity>5</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Triple Room with Bathroom</type>
-                    <beds>3 twin beds</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="false" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Quadruple Room with Bathroom</type>
-                    <beds>5 twin beds</beds>
-                    <capacity>5</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="false" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Double Room with Private Bathroom</type>
-                    <beds>1 full bed</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
-        </game>
-        <game id="game7" purpose="purpose0">
-            <name>Complex Friends</name>
-            <category>Motel</category>
-            <address>Maria Curie Str. 4, 5801 Pleven Center, 5801 Pleven, Bulgaria</address>
-            <description>Located in Pleven, a 13-minute walk from Panorama Mall, Complex Friends
-                offers express check-in and check-out and free WiFi throughout the property. This
-                motel has air-conditioned rooms with a private bathroom. The property features a
-                restaurant. The units at the motel come with a seating area and a flat-screen TV.
-                All units will provide guests with a fridge. A continental breakfast is available
-                daily at the property. The property is in the sport area of the city. Hospital
-                &quot;Heart and Brain&quot; is 328 feet away and hospital &quot;UMBAL Georgi
-                Stranski (second clinic base) is 656 feet away.</description>
-            <stars>0</stars>
-            <rating>8.2</rating>
-            <thumbnail source="game7_image0" />
-            <gallery>
-                <image source="game7_image1" />
-                <image source="game7_image2" />
-                <image source="game7_image3" />
-                <image source="game7_image4" />
-                <image source="game7_image5" />
-                <image source="game7_image6" />
-                <image source="game7_image7" />
-                <image source="game7_image8" />
-            </gallery>
-            <amenities parking="true" wi-fi="true" pool="false" spa="false" fitness="false"
-                restaurant="true" pets="false" breakfast="true" dinner="false" room-service="false"
-                refrigerator="false" bath="false" coffee-maker="false" massage="false"
-                conference-rooms="false" />
-            <rooms>
-                <room>
-                    <type>Double Room</type>
-                    <beds>2 twin beds</beds>
-                    <capacity>2</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Quadruple Room</type>
-                    <beds>1 bunk bed</beds>
-                    <capacity>4</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Large Single Room</type>
-                    <beds>1 twin bed</beds>
-                    <capacity>1</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="true"
-                        kitchen="false" />
-                </room>
-                <room>
-                    <type>Classic Triple Room</type>
-                    <beds>3 twin beds</beds>
-                    <capacity>3</capacity>
-                    <facilities tv="true" balcony="true" air-conditioning="true" smoking="false"
-                        kitchen="false" />
-                </room>
-            </rooms>
+        <game id="game6"
+            purpose="purpose_games_for_health" sector="sector_healthcare">
+            <title>Surgeon Simulator</title>
+            <description>Surgeon Simulator (formerly Surgeon Simulator 2013) is a surgical
+        simulation video game developed and published by Bossa Studios. The initial version was
+        created by Tom Jackson, Jack Good, Luke Williams and James Broadley in a 48-hour period for
+        the 2013 Global Game Jam; the developers continued and spent 48 days creating a commercial
+        version.</description>
+            <releaseYear>2013</releaseYear>
+            <studio>Bossa Studios</studio>
+            <stars>4.5</stars>
+            <thumbnail source="game6_image" />
+            <primaryCategory>Personal</primaryCategory>
+            <secondaryCategory>Educational</secondaryCategory>
         </game>
     </games>
     <purposes>
-        <purpose id="purpose0">Games for Health</purpose>
-        <purpose id="purpose1">Advergames</purpose>
-        <purpose id="purpose2">Games for Training</purpose>
-        <purpose id="purpose3">Games for Education</purpose>
-        <purpose id="purpose4">Games for Science and Research</purpose>
-        <purpose id="purpose5">Production</purpose>
-        <purpose id="purpose6">Games as Work</purpose>
+        <purpose id="purpose_games_for_health">Games for Health</purpose>
+        <purpose
+            id="purpose_advergames">Advergames</purpose>
+        <purpose
+            id="purpose_games_for_training">Games for Training</purpose>
+        <purpose
+            id="purpose_games_for_education">Games for Education</purpose>
+        <purpose
+            id="purpose_games_for_science_and_research">Games for Science and Research</purpose>
+        <purpose
+            id="purpose_production">Production</purpose>
+        <purpose
+            id="purpose_games_as_work">Games as Work</purpose>
     </purposes>
     <sectors>
-        <sector id="sector0">Government and NGO</sector>
-        <sector id="sector1">Defense</sector>
-        <sector id="sector2">Healthcare</sector>
-        <sector id="sector3">Marketing and Communications</sector>
-        <sector id="sector4">Education</sector>
-        <sector id="sector5">Corporate</sector>
-        <sector id="sector6">Industry</sector>
+        <sector id="sector_government_and_ngo">Government and NGO</sector>
+        <sector
+            id="sector_defense">Defense</sector>
+        <sector
+            id="sector_healthcare">Healthcare</sector>
+        <sector
+            id="sector_marketing_and_communications">Marketing and Communications</sector>
+        <sector
+            id="sector_education">Education</sector>
+        <sector id="sector_corporate">Corporate</sector>
+        <sector
+            id="sector_industry">Industry</sector>
     </sectors>
 </catalogue>
