@@ -5,7 +5,6 @@
         xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation CDATA #FIXED "GameCatalog.xsd">
 
-    <!-- <!NOTATION jpeg SYSTEM "image/jpeg"> -->
     <!ENTITY game0_image "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6250/header.jpg?t=1573746017">
     <!ENTITY game1_image "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3900/header.jpg?t=1724341287">
     <!ENTITY game2_image "https://eu-images.contentstack.com/v3/assets/blt8770191dea35bccc/blte8b0e0f404c37fba/64d387fb44f1d11be1bb19a6/Dance_20Dance_20Revolution.png">
