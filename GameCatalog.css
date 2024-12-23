@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:1em;
 }
 
 .game {
@@ -20,7 +21,8 @@ body {
     gap: 1em;
     flex-direction: column;
     border: 1px solid black;
-    margin: unset auto
+    margin: unset auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game * {
