@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
     <xsl:output method="html" encoding="UTF-8" />
+    <xsl:param name="sortKey" select="." />
     <xsl:template match="/catalogue">
         <html>
             <head>
@@ -8,20 +9,31 @@
                 <title>Video Game Catalogue</title>
             </head>
             <body>
-                <h1 class="title">Video Game Catalogue</h1>
-                <div class="catalogue">
-                    <xsl:apply-templates select="games/game">
-                        <xsl:sort select="purpose" />
-                        <xsl:sort select="sector" />
-                    </xsl:apply-templates>
+                <div id="content">
+                    <h1 class="title">Video Game Catalogue</h1>
+                    <div class="catalogue">
+                        <div class="buttons">
+                            <button onclick="sortGames('purpose')">Sort by Purpose</button>
+                            <button onclick="sortGames('sector')">Sort by Sector</button>
+                        </div>
+                        <div>
+                            <xsl:apply-templates select="games/game">
+                                <xsl:sort select="@*[name() = $sortKey]" />
+                            </xsl:apply-templates>
+                        </div>
+                    </div>
                 </div>
+
             </body>
+
+            <script src="./GameCatalog.js" defer="true" />
         </html>
     </xsl:template>
 
     <xsl:template match="game">
         <xsl:variable name="purposeId" select="@purpose" />
-        <xsl:variable name="sectorId" select="@sector" />
+        <xsl:variable name="sectorId"
+            select="@sector" />
 
         <div class="game">
             <h2>
