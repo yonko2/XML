@@ -1384,7 +1384,7 @@
       "id": "cd1329b4-191e-4bc9-8e87-989f64751c47",
       "comment": "",
       "command": "if",
-      "target": "${loggedIn}",
+      "target": "${loggedIn} == false",
       "targets": [],
       "value": ""
     }, {
@@ -1409,10 +1409,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "59e50c9b-bf94-4d62-ba50-de580bbb8415",
+      "comment": "",
+      "command": "echo",
+      "target": "${hasListing}",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "98506b5f-d9c4-4b2b-8e28-0da4d902a695",
       "comment": "",
       "command": "if",
-      "target": "${hasListing} == false",
+      "target": "${hasListing} == \"false\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51dbd13e-1871-4da6-a60a-ad1257f87a62",
+      "comment": "",
+      "command": "echo",
+      "target": "\"in\"",
       "targets": [],
       "value": ""
     }, {
@@ -1475,10 +1489,17 @@
       ],
       "value": ""
     }, {
+      "id": "03aa7a51-6656-45a4-9954-5f1690189a0d",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "xpath=//div[@id='listContainer']/div/div/div/div/div/div",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "0c06074a-e845-430d-9f0a-6a91301a470c",
       "comment": "",
       "command": "storeXpathCount",
-      "target": "css=.observable",
+      "target": "xpath=//div[@id='listContainer']/div/div/div/div/div/div",
       "targets": [],
       "value": "prevCount"
     }, {
@@ -1520,17 +1541,63 @@
       ],
       "value": ""
     }, {
+      "id": "175db8c3-b534-4f31-9a2d-b26664c62921",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8800a4e9-61f8-4508-98f9-e4e776cf6c82",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.no-results",
+      "targets": [
+        ["css=.no-results", "css:finder"],
+        ["xpath=//div[@id='listContainer']/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "noResultsText"
+    }, {
+      "id": "ce1943b9-c3b6-4f20-a73d-361ea6cc0120",
+      "comment": "",
+      "command": "echo",
+      "target": "${noResultsText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "110ffa21-2eaa-4938-9d9e-b74f66d6e4d1",
+      "comment": "",
+      "command": "if",
+      "target": "${noResultsText} !== \"Няма намерени резултати по зададените критерии.\"",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "53d643c3-d75d-4cf0-94cd-1ccdbf83ca5d",
       "comment": "",
       "command": "storeXpathCount",
-      "target": "css=.observable",
+      "target": "xpath=//div[@id='listContainer']/div/div/div/div/div/div",
       "targets": [],
       "value": "newCount"
+    }, {
+      "id": "5a79224e-4fdb-41d2-acc2-eaa669eb01d8",
+      "comment": "",
+      "command": "echo",
+      "target": "${prevCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9fce4d1-9c55-4cbc-9bf9-e73de7af44f8",
+      "comment": "",
+      "command": "echo",
+      "target": "${newCount}",
+      "targets": [],
+      "value": ""
     }, {
       "id": "39f7c194-703b-4bb7-8fdd-107599d3fa8a",
       "comment": "",
       "command": "executeScript",
-      "target": "return prevCount > newCount",
+      "target": "return ${prevCount} > ${newCount}",
       "targets": [],
       "value": "result"
     }, {
@@ -1540,6 +1607,13 @@
       "target": "result",
       "targets": [],
       "value": "true"
+    }, {
+      "id": "3dcb126d-1003-4585-a526-01a6b1572c04",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "df24e0b5-7503-4ae6-89c3-92f2469e7a4b",
@@ -1760,13 +1834,6 @@
       "target": "${result}",
       "targets": [],
       "value": "hasListing"
-    }, {
-      "id": "cfde588f-b6bf-459f-8f10-b51049d3cc3c",
-      "comment": "",
-      "command": "echo",
-      "target": "${hasListing}",
-      "targets": [],
-      "value": ""
     }]
   }],
   "suites": [{
