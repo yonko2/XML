@@ -465,17 +465,6 @@
       ],
       "value": ""
     }, {
-      "id": "f44a4468-6e32-4d27-a5b0-e4ca96563988",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=#deleteNotepadButton > .mdc-button__label",
-      "targets": [
-        ["css=#deleteNotepadButton > .mdc-button__label", "css:finder"],
-        ["xpath=//button[@id='deleteNotepadButton']/span", "xpath:idRelative"],
-        ["xpath=//div[3]/button[2]/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "7eb763cc-9a13-4291-a0db-f526bc9a2fce",
       "comment": "",
       "command": "click",
@@ -523,30 +512,6 @@
       ],
       "value": ""
     }, {
-      "id": "fea6c962-0209-4c3f-a96a-4838f2537d3d",
-      "comment": "",
-      "command": "mouseDown",
-      "target": "css=#sortMenu .mdc-list-item:nth-child(3) > span",
-      "targets": [
-        ["css=#sortMenu .mdc-list-item:nth-child(3) > span", "css:finder"],
-        ["xpath=//div[@id='sortMenu']/ul/li[3]/span", "xpath:idRelative"],
-        ["xpath=//li[3]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Цена - най-висока')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ba3ca033-c6c1-469f-8d4f-18ee5749282d",
-      "comment": "",
-      "command": "mouseUp",
-      "target": "css=#sortMenu .mdc-list-item:nth-child(3)",
-      "targets": [
-        ["css=#sortMenu .mdc-list-item:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='sortMenu']/ul/li[3]", "xpath:idRelative"],
-        ["xpath=//li[3]", "xpath:position"],
-        ["xpath=//li[contains(.,'Цена - най-висока')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "66711234-5581-454c-bf64-fef7c0e68583",
       "comment": "",
       "command": "click",
@@ -556,28 +521,6 @@
         ["xpath=//div[@id='sortMenu']/ul/li[3]", "xpath:idRelative"],
         ["xpath=//li[3]", "xpath:position"],
         ["xpath=//li[contains(.,'Цена - най-висока')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "381d6ca3-6cc6-44ef-b9cc-de0b1b11cd7a",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.mdc-layout-grid__cell:nth-child(4) .mdc-card__media",
-      "targets": [
-        ["css=.mdc-layout-grid__cell:nth-child(4) .mdc-card__media", "css:finder"],
-        ["xpath=//div[@id='listContainer']/div/div/div/div/div[4]/div/div/a/div", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/a/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "0f26755d-58ed-4de1-ba32-6acd4e8102f2",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.mdc-layout-grid__cell:nth-child(4) .mdc-card__media",
-      "targets": [
-        ["css=.mdc-layout-grid__cell:nth-child(4) .mdc-card__media", "css:finder"],
-        ["xpath=//div[@id='listContainer']/div/div/div/div/div[4]/div/div/a/div", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/a/div", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -611,13 +554,6 @@
         ["xpath=//h6[contains(.,'698,000 лв.')]", "xpath:innerText"]
       ],
       "value": "priceTwo"
-    }, {
-      "id": "3b660c9b-e529-4293-808a-3d12e6739e5a",
-      "comment": "",
-      "command": "echo",
-      "target": "${priceOne}",
-      "targets": [],
-      "value": ""
     }, {
       "id": "4405489f-4351-474d-bc27-a53e36d3cd52",
       "comment": "",
@@ -1409,24 +1345,10 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "59e50c9b-bf94-4d62-ba50-de580bbb8415",
-      "comment": "",
-      "command": "echo",
-      "target": "${hasListing}",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "98506b5f-d9c4-4b2b-8e28-0da4d902a695",
       "comment": "",
       "command": "if",
       "target": "${hasListing} == \"false\"",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "51dbd13e-1871-4da6-a60a-ad1257f87a62",
-      "comment": "",
-      "command": "echo",
-      "target": "\"in\"",
       "targets": [],
       "value": ""
     }, {
@@ -1489,13 +1411,6 @@
       ],
       "value": ""
     }, {
-      "id": "03aa7a51-6656-45a4-9954-5f1690189a0d",
-      "comment": "",
-      "command": "//assertElementPresent",
-      "target": "xpath=//div[@id='listContainer']/div/div/div/div/div/div",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "0c06074a-e845-430d-9f0a-6a91301a470c",
       "comment": "",
       "command": "storeXpathCount",
@@ -1544,7 +1459,7 @@
       "id": "175db8c3-b534-4f31-9a2d-b26664c62921",
       "comment": "",
       "command": "pause",
-      "target": "10000",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -1559,13 +1474,6 @@
       ],
       "value": "noResultsText"
     }, {
-      "id": "ce1943b9-c3b6-4f20-a73d-361ea6cc0120",
-      "comment": "",
-      "command": "echo",
-      "target": "${noResultsText}",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "110ffa21-2eaa-4938-9d9e-b74f66d6e4d1",
       "comment": "",
       "command": "if",
@@ -1579,20 +1487,6 @@
       "target": "xpath=//div[@id='listContainer']/div/div/div/div/div/div",
       "targets": [],
       "value": "newCount"
-    }, {
-      "id": "5a79224e-4fdb-41d2-acc2-eaa669eb01d8",
-      "comment": "",
-      "command": "echo",
-      "target": "${prevCount}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f9fce4d1-9c55-4cbc-9bf9-e73de7af44f8",
-      "comment": "",
-      "command": "echo",
-      "target": "${newCount}",
-      "targets": [],
-      "value": ""
     }, {
       "id": "39f7c194-703b-4bb7-8fdd-107599d3fa8a",
       "comment": "",
@@ -1743,6 +1637,13 @@
         ["xpath=//div[@id='private_login_conteiner']/div[3]/button/div", "xpath:idRelative"],
         ["xpath=//div[2]/div[3]/button/div", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "59df579c-07cb-4259-8da3-62f60c0e5017",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
       "value": ""
     }, {
       "id": "c7cafbdc-249c-44cd-b20b-7131f0c0c060",
